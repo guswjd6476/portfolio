@@ -1,0 +1,610 @@
+
+  #app{
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  *{
+    box-sizing: border-box;
+  }
+  .w1720{
+    width: 1720px;
+    margin: auto;
+  }
+  .w1440{
+    width: 1440px;
+    margin: auto;
+  }
+  nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 990;
+    background-color: rgba(225, 225, 225, 0.5);
+    transform: translate3d(0, 0, 0);
+    transition: 0.1s all ease-out;
+  }
+  .navbar.navbar--hidden {
+    box-shadow: none;
+    transform: translate3d(0, -100%, 0);
+  }
+  .navwrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .logo{
+    width: 140px;
+    height: 70px;
+  }
+  .logo a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+  }
+  .logo a img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .logoh{
+    opacity: 0;
+    transition-duration: 1.5s;
+  }
+  .logo:hover .logoh{
+    display: block;
+    opacity: 1;
+  }
+ 
+    nav ul{
+      display: flex;
+      width: calc(100% - 140px);
+      justify-content: right;
+    
+    }
+    nav ul li{
+      padding: 10px 20px;
+      color: #000;
+      font-size: 20px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+  .btn_ham{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    display: none;
+    cursor: pointer;
+  }
+  .btn_ham span{
+    width: 28px;
+    height: 4px;
+    background-color: #000;
+  }
+    .section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .yc{
+    color: #FDE701;
+  }
+  .bc{
+    color: #007EFF;
+  }
+  .blackc{
+    color: #000;
+  }
+  .whitec{
+    color: #fff;
+  }
+  .subtitle{
+      font-size: 40px;
+      font-weight: 900;
+      padding: 0px 20px;
+  }
+  .subtitle strong{
+    position: relative;
+  }
+  .subtitle strong::before{
+    content: '';
+      width: 100%;
+      height: 5px;
+      position: absolute;
+      bottom: -1px;
+      background: #007EFF;
+      transition: 0.3s ease-in-out;
+  }
+  .subpgwrap{
+    width:100%;
+    height: 100%;
+    padding: 50px 0;
+    position: relative;
+  }
+  .subpg{
+    padding:  50px 10px 0px 10px;
+  }
+  .cd_container{
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cdwrap{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    padding: 20px 0;
+    cursor: pointer;
+  }
+  .cdbox{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .cdzip{
+    position: relative;
+    width: 360px;
+    height: 360px;
+    float: left;
+    z-index: 10;
+    padding: 20px;
+  }
+  .cdimg{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    z-index: 5;
+    left: 20%;
+    top : 5px;
+    animation-duration: 4s;
+    animation-name: out;
+    animation-fill-mode: forwards;
+  }
+  .cdwrap:hover .cdimg{
+    animation-name: in;
+  }
+  @keyframes in {
+    0% { 
+      left: 20%;
+      transform: rotate(0deg);
+    }
+
+    100% {
+      left: 40%;
+       transform: rotate(360deg)
+      }
+  }
+
+  @keyframes out {
+    100% { 
+      left: 20%;
+      transform: rotate(0deg);
+    }
+
+    0% {
+      left: 40%;
+       transform: rotate(360deg)
+      }
+  }
+  .cdzip_text strong{
+    font-size: 52px;
+    font-weight: 900;
+  }
+  .cdzip_text h2{
+    font-weight: 900;
+  }
+  .cdbox .icon_box{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    width: 360px;
+    flex-wrap: wrap;
+    z-index: 50;
+  }
+  .cdbox .icon_box .img_box{
+    width: 30px;
+    height: 37px;
+    margin-right: 10px;
+  }
+  .cdwrap.gogo .cdimg{
+    animation:circles 3s ease forwards;
+  }
+  footer{
+    padding: 50px 0;
+    background-color: #d9d9d9;
+  }
+  footer .textbox{
+    text-align: center;
+  }
+  .cdzip_text{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 50;
+  }
+  .project_t{
+    padding-bottom: 20px;
+  }
+  
+.modal {
+  top: 50%;
+  left: 50%;
+  height: 85%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 9999;
+  border-radius: 5px;
+  background-color: #000;
+  text-align: center;
+  transition: 0.25s;
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+}
+.modal.show{
+  display: flex;
+}
+.modal p {
+  margin: 0;
+  color: #fff;
+}
+
+
+.modal_bg {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.modal_h{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.modal_h .img_box{
+  width: 140px;
+  height: 70px;
+}
+.close_tab{
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+.modal_m .modal_box{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.modal_left {
+  width: 45%;
+  margin-right: 20px;
+}
+.modal_right{
+  width: calc(65% - 20px);
+  height: 500px;
+}
+.modal_left .img_box{
+  width: 100%;
+  height: 500px;
+}
+.modal_left .img_box img{
+  object-fit: cover;
+}
+
+.modal_title{
+  color: #fff;
+  text-align: left;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.modal_sub{
+  margin-bottom: 15px;
+}
+.modal_sub h2{
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.modal_sub p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.modal_button{
+  padding-top: 40px;
+  display: flex;
+}
+.modal_button a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width : 180px;
+  height: 50px;
+  background-color: #007EFF;
+  color: #fff;
+  font-size: 16px;
+  margin-right: 20px;
+  border-radius: 6px;
+}
+.modal_button .more{
+  width : 80px;
+  height: 50px;
+  background-color: #777;
+  color: #fff;
+  font-size: 16px;
+}
+.modal_button a img {
+  width: 20px;
+  height: 30px;
+  margin-right: 10px;
+}
+.modal_f{
+  width: 100%;
+  height: 100px;
+  background-color: #222222;
+}
+.modal_f .modal_box{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+}
+.modal_f .img_box{
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+.modal_f .title_box{
+  width: 20%;
+  margin-right: 20px;
+  text-align: left;
+}
+.modal_f .title_box strong{
+  display: block;
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+}
+.modal_f .title_box p{
+  color: #666666;
+}
+.play_box{
+  width: calc(60% - 120px);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.play_box .img_box{
+  width: 20px;
+  height: 24px;
+}
+
+  @keyframes circles {
+      from {top:20px; left:20% }
+      to {top: 20px; left : 40% ; transform:rotate(300deg); }
+  }
+ 
+  @media only screen and (max-width: 1720px) {
+      .w1720{
+          width: 100%;
+      }
+  }
+  @media only screen and (max-width: 1460px) {
+      .w1440{
+          width: 100%;
+      }
+      .modal {
+        width: calc(100% - 20px);
+      }
+      
+  }
+  @media only screen and (max-width: 1240px) {
+      .w1200{
+          width: 100%;
+      }
+      nav ul li{
+      padding: 10px;
+      font-size: 18px;
+      }
+      .navwrap {
+        padding: 10px;
+      }
+      .subpg{
+        padding: 40px 10px 0px 10px;
+      }
+      .subtitle{
+        font-size: 30px;
+        padding: 0 10px;
+      }
+      .cdzip{
+        width: 300px;
+        height: 300px;
+      }
+      .cdbox .icon_box{
+        width: 280px;
+      }
+      .cdimg{
+        width: 290px;
+        height: 290px;
+      }
+      .cdzip_text strong{
+        font-size: 36px;
+      }
+      
+  }
+  @media only screen and (max-width: 900px) {
+    .cdzip{
+      width: 240px;
+      height: 240px;
+    }
+    .cdbox .icon_box{
+      width: 220px;
+    }
+    .cdimg{
+      width: 230px;
+      height: 230px;
+    }
+    .cdzip_text strong{
+      font-size: 30px;
+    }
+    .modal_sub h2{
+      font-size: 16px;
+    }
+    .modal_sub p{
+      font-size: 14px;
+    }
+    .modal_button {
+      padding-top: 20px;
+    }
+    .subpgwrap{
+      padding: 40px 0;
+    }
+
+    .cdbox .icon_box .img_box{
+      width: 28px;
+      height: 34px;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+    .project_t {
+      padding-bottom: 10px;
+  }
+
+  }
+  @media only screen and (max-width: 720px) {
+    nav{
+      
+      padding : 0px;
+    }
+    .navwrap{
+      padding: 0;
+      height:80px;
+    }
+    nav ul{
+      position: absolute;
+      display: none;
+      width: 100%;
+      text-align: right;
+      top: 80px;
+      background-color: rgba(225, 225, 225, 0.5);
+    }
+    .navi.active{
+      display: block;
+    }
+    .logo{
+      width: 120px;
+      height: 60px;
+      margin-left: 10px;
+    }
+    .btn_ham{
+      display: flex;
+      margin-right: 10px;
+    }
+   
+      .cdwrap{
+        width: calc(50% - 10px);
+
+      }
+      .cdzip{
+        width: 100%;
+        padding-top: 100%;
+      }
+      .cdbox .icon_box{
+        width: 95%;
+        z-index: 100;
+      }
+      .cdimg{
+        position: absolute;
+        width: 95%;
+        height: 95%;
+        left: 10px;
+        top: 5px;
+        animation: none;
+        opacity: 0.3;
+        z-index: 30;
+      }
+
+
+      .cdbox .icon_box .img_box{
+        width: 28px;
+        height: 32px;
+        margin-right: 5px;
+      }
+      .modal_m{
+        overflow-y: auto;
+      }
+      .modal_m .modal_box{
+        padding: 10px;
+        display: block;
+      }
+      .modal_left {
+        width: 100%;
+        height: 500px;
+        margin-right: 0px;
+      }
+      .modal_right{
+        padding-top: 40px;
+        width: 100%;
+        height: 500px;
+     }
+     .modal_f .title_box{
+      width: 30%;
+     }
+      .play_box{
+        width: 70%;
+      }
+      .play_box .img_box{
+        width: 15px;
+        height: 20px;
+      }
+      .modal_f .modal_box>.img_box{
+        display: none;
+      }
+      .modal_f .title_box{
+        font-size: 14px;
+        margin-right: 20px;
+      }
+      .modal_button{
+        justify-content: center;
+        padding-bottom: 40px;
+      }
+  }
+
+  @media only screen and (max-width: 450px) {
+    
+    .cdwrap{
+      width: 100%;
+    }
+    .cdzip_text strong{
+      font-size: 38px;
+    }
+    
+
+  }

@@ -1,0 +1,657 @@
+
+.sec1{
+    padding-top: 75px;
+    box-sizing: border-box;
+}
+.sec1_top{
+    max-width: 1760px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 125px;
+    overflow: hidden;
+}
+.mbtit_box{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.mbtit{
+    width: 1500px;
+    height: 300px;
+}
+.mbtit>text{    
+    font-size: 180px;
+    font-weight: bold;
+    fill:white;
+    stroke:green;
+}
+.sec1_box{
+    position: relative;
+    height: 100%;
+}
+.sec1_top_textbox{
+    font-size: 44px;
+    line-height: 64px;
+    color: #000;
+    position: relative;
+    z-index: 9;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 900;|
+}
+.sec1_top_textbox p{
+    overflow: hidden;
+}
+.sec1_top_textbox>p>span{
+    display: block;
+    transform: translateY(100%);
+    transition: transform 1s ease-in-out;
+}
+.sec1_top_textbox.go>p>span{
+    transform: translateY(0);
+}
+.btn_more{
+    display: block;
+    vertical-align: top;
+    width: 180px;
+    height: 60px;
+    line-height: 56px;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 18px;
+    transition: all .2s
+}
+.btn_more:hover{
+    background-color : rgba(0,0,0,.1);
+}
+.sec1_box>.btn_more{
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+}
+.sec1_img1{
+    margin-top: 80px;
+    padding-top: 34.47916%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../img/pollexzone/main/mc1_img.jpg);        
+}
+.sec1_ban1{
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-image: url(../img/pollexzone/main/mc1_banner.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.textbox{
+    margin: auto;
+    text-align: center;
+}
+.textbox>strong{
+    display: block;
+    font-size: 27px;
+    line-height: 40px;
+    letter-spacing: 4.94px;
+}
+.textbox>p{
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.4;
+    margin-top: 22px;
+}
+.sec2{
+    padding: 185px 0;
+    box-sizing: border-box;
+}
+.sec2_wrap{
+    display: flex;
+}
+.sec2_left{
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+}
+.sec2_left>a{
+    width: 0;
+    display: block;
+    height: 620px;
+    position: relative;
+    background-image: url(../img/pollexzone/main/sec2_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.textbox1{
+    position: absolute;
+    width: 80%;
+    left: 20px;
+    right: 10px;
+    bottom: 20px;
+    color: #fff;
+}
+.textbox1>strong{
+    display: block;
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: bold;
+}
+.textbox1>p{
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.sec2_right{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.sec2_right>div{
+    padding: 5px;
+   box-sizing: border-box;
+    width: calc(50% - 5px);
+    margin-bottom: 20px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.sec2_right>div:nth-child(3),.sec2_right>div:nth-child(4){
+    margin-bottom: 0;
+}
+.sec2_right>div>a{
+    display: block;
+    height: 305px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.sec2_right>div>.rimg1{
+    width: 0;
+}
+.sec2_right>div>.rimg2{
+    height: 0;
+}
+.sec2_right>div>.rimg3{
+    top: auto;
+    bottom: -305px;
+}
+.sec2_right>div>.rimg4{
+
+    left: auto;
+    right: -305px;
+}
+.rimg1{
+    background-image: url(../img/pollexzone/main/sec_2.jpg);
+}
+.rimg2{
+    background-image: url(../img/pollexzone/main/sec2_3.jpg);
+}
+.rimg3{
+    background-image: url(../img/pollexzone/main/sec2_4.jpg);
+}
+.rimg4{
+    background-image: url(../img/pollexzone/main/sec2_5.jpg);
+}
+.sec3{
+    padding: 130px 0;
+    box-sizing: border-box;
+    background-color: #000;
+}
+.sec_title{
+    font-size: 36px;
+    line-height: 54px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.sec3_list{
+    width: calc(100% + 114px);
+    display: flex;
+    margin-left: -57px;
+    margin-right: -57px;
+}
+.sec3_list>li{
+    width: 33.3333%;
+    padding: 0 57px;
+    box-sizing: border-box;
+    
+}
+.textbox2{
+    padding-top: 40px;
+    margin: auto;
+    text-align: left;
+    color: #fff;
+    box-sizing: border-box;
+}
+.sec3 img{
+    width: 100%;
+}
+.textbox2>strong{
+    display: block;
+    font-size: 24px;
+    line-height: 36px;
+}
+.textbox2>p{
+    font-size: 15px;
+    line-height: 22px;
+    opacity: 0.6;
+    margin-top: 14px;
+}
+.sec3 .btn_more{
+    margin-top: 50px;
+    vertical-align: top;
+    width: 120px;
+    height: 40px;
+    line-height: 38px;
+    border: 1px solid #b3b3b3;
+    box-sizing: border-box;
+    text-align: center;
+    color: #b3b3b3;
+    font-size: 14px;
+}
+.sec4{
+    position: relative;
+    padding-top: 55.8333%;
+    height: auto;
+}
+.sec4_full>div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.se_img{
+    background-image: url(../img/pollexzone/main/sec4.jpg);
+}
+.go_img{
+    background-image: url(../img/pollexzone/main/sec4_gong.jpg);
+}
+.ma_img{
+    background-image: url(../img/pollexzone/main/sec4_map.jpg);
+}
+.sec4_box{
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.sec4_textlist{
+    width: 90%;
+}
+.sec4_logo_list{
+    width: 10%;
+    text-align: center;
+}
+.sec4_textlist span{
+    display: block;
+    font-size: 20px;
+    line-height: 29px;
+    color: #39b919;
+}
+.sec4_textlist a{
+    font-size: 100px;
+    line-height: 148px;
+    font-weight: 300;
+    vertical-align: top;
+    color: #fff;
+}
+.sec4_textlist p{
+    font-size: 24px;
+    line-height: 40px;
+    margin-top: 28px;
+    color: #fff;
+}
+.sec4_textlist p:last-child{
+    margin-top: 0;
+}
+.sec4_logo_list a{
+    display: block;
+    margin-top: 20px;
+}
+.sec4_logo_list span{
+    display: block;
+    width: 120px;
+    height: 120px;
+    border: 3px solid #39b919;
+    box-sizing: border-box;
+    background-position: center center;
+    background-color: #fff;
+    border-radius: 100%;
+    background-size: 100% 100%;
+}
+.log1{
+    background-image: url(../img/pollexzone/main/sec4_logo_1.png);
+}
+.log2{
+    background-image: url(../img/pollexzone/main/sec4_logo_2.png);
+}
+.log3{
+    background-image: url(../img/pollexzone/main/sec4_logo_3.png);
+}
+.sec4_logo_list p{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.sec5{
+    padding: 150px 0;
+    border-top: 6px solid #39b919;
+}
+.sec5_wrap{
+    display: flex;
+}
+.sec5_wrap>div{
+    width: 50%;
+}
+.sec5_left{
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+.sec5 h2{
+    position: relative;
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 900;
+    color: #00305b;
+    margin-bottom: 20px;
+}
+.sec5 h2>a{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #999;
+}
+.sec5 ul{
+    border-top: 2px solid #000;
+}
+.sec5 ul>li{
+    border-bottom: 1px solid #000;
+}
+.sec5 ul>li:hover{
+    background-color: rgba(0,0,0,0.05);
+}
+
+.sec5 ul>li>a{
+    display: block;
+    position: relative;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.sec5 ul>li>a>strong{
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    line-height: 58px;
+    font-weight: 500;
+    color : #333
+}
+.sec5 ul>li>a>span{
+    font-size: 13px;
+    line-height: 58px;
+    color: #999;
+}
+
+
+
+
+/*footer start------------------------------*/
+
+
+
+
+
+
+@media screen and (max-width: 1920px){
+    .sec4{
+        padding-top: 0;
+        height: 1072px;
+    }
+}
+
+@media screen and (max-width: 1640px){
+    
+    .sec1_top{
+       width: 100%;
+    }
+    .mbtit{
+        width: 100%;
+    }
+    .sec4_box{
+        width: auto;
+        left: 50px;
+        right: 50px;
+        margin-left: 0;
+        transform: none;
+    }
+
+}
+
+
+@media screen and (max-width: 1150px){
+    .sec1_top{
+        width: 100%;
+    }
+    .mbtit_box{
+        width: 100%;
+    }
+    .mbtit{
+        width: 100%;
+        height: 22vw;
+    }
+    
+}
+
+
+@media screen and (max-width: 1100px){
+    
+    .sec1_top_textbox p{
+        font-size: 34px;
+        line-height: 50px;
+    }
+    .sec1_top{      
+        padding-top: calc(12vw);
+    }
+
+    .sec3_list>li{
+        padding: 0 20px;
+    }
+    .sec3_list{
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .sec4{
+        height: auto;
+        padding-top: 116%;
+    }
+    .sec4_box{
+        left: 30px;
+        right: 30px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 900px){
+    .sec1_top_textbox p{
+        font-size: 28px;
+        line-height: 44px;
+    }        
+    .sec2_wrap{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec2_left{
+        width: 100%;
+    }
+    .sec2_right{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec2_right>div{
+        padding: 5px;
+        box-sizing: border-box;
+        width: 50%;
+    }
+    .sec2_right>div>a{
+        display: block;
+        height: 305px;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+
+}
+
+@media screen and (max-width: 767px){
+    .sec1_top_textbox p {
+        display: block;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .sec1_box{
+        flex-direction: column;
+        align-items:flex-start;
+    }
+    .sec1_img1{
+        padding-top: 100%;
+    }
+    .sec1_ban1{
+        height: 200px;
+    }
+    .btn_more{
+        margin-top: 50px;
+    }
+    .sec1_box>.btn_more{
+        position: static;
+        margin-top: 30px;
+        width: 130px;
+        height: 40px;
+        line-height: 36px;
+        font-size: 11px;
+    }
+    .textbox1>p{
+        display: none;
+    }
+    .textbox1>strong{
+        font-size: 12px;
+    }
+    .sec3{
+        padding: 88px 0;
+    }
+    .textbox2>strong{
+        font-size: 20px;
+        line-height: 29px;
+    }
+    .scr{
+        overflow-x: auto;
+    }
+    .sec3_list{
+        width: 280%;
+        flex-shrink: 0; 
+        overflow-x: auto;
+    }
+    .textbox2>p{
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 0;
+    }
+    .sec4{
+        height: auto;
+        padding-top: 160%;
+    }
+    .sec4_textlist{
+        width: 100%;
+    }
+    .sec4_box{
+        top: 50px;
+        bottom: 50px;
+        left: 15px;
+        flex-direction: column;
+        justify-content: space-between;
+    }    
+    .sec4_textlist span{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .sec4_textlist a{
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .sec4_textlist p{
+        font-size: 13px;
+        line-height: 21px;
+        margin-top: 20px;
+    }
+    .sec4_logo_list{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .sec4_logo_list span{
+        width: 90px;
+        height: 90px;
+    }
+    .sec4_logo_list p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .sec5{
+        padding: 80px 0 90px;
+    }
+    .sec5_wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .sec5_wrap>div{
+        width: 100%;
+    }
+    .sec5_left{
+        padding-right: 0px;
+    }
+    .sec5_right{
+        margin-top: 60px;
+    }
+    
+}
