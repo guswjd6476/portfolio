@@ -71,6 +71,10 @@
       cursor: pointer;
       font-weight: 700;
     }
+    nav ul li.on{
+      color: #007EFF;
+      font-weight: 900;
+    }
   .btn_ham{
     width: 30px;
     height: 30px;

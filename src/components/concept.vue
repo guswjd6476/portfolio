@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="section concepts">
     <div class="subpgwrap">
         <div class="w1720 subtitle">
             <div class="anibox">

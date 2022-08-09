@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="section intros">
     <div class="videowrap">
       <video autoplay muted loop>
         <source src="../../public/image/intro.mp4">

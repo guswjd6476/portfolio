@@ -7,13 +7,13 @@
         <img src="../public/image/logo/logoh.png" class="logoh">
       </a>
     </div>
-    <ul id="navi" class="navi" :class="{ 'navbar--hidden': !showNavbar }">
-      <li v-on:click="gotointro">Intro</li>
-      <li v-on:click="gotoabout">About</li>
-      <li v-on:click="gotoconcept">Concept</li>
-      <li v-on:click="gotowebclone">Webclone</li>
-      <li v-on:click="gotoproject">Project</li>
-      <li v-on:click="gotocontact">Contact</li>
+    <ul id="navi" class="navi" >
+      <li class="tab on" v-on:click="gotointro">Intro</li>
+      <li class="tab" v-on:click="gotoabout">About</li>
+      <li class="tab" v-on:click="gotoconcept">Concept</li>
+      <li class="tab" v-on:click="gotowebclone">Webclone</li>
+      <li class="tab" v-on:click="gotoproject">Project</li>
+      <li class="tab" v-on:click="gotocontact">Contact</li>
     </ul>
     <div id="btn_ham"  class="btn_ham">
       <span></span>
@@ -52,6 +52,9 @@ export default {
       lastScrollPosition: 0
     }
   },
+  beforeUnmount () {
+    window.removeEventListener('scroll', this.onScroll)
+  },
   mounted () {
     window.addEventListener('scroll', this.onScroll);
     const btn_h = document.getElementById('btn_ham')
@@ -60,10 +63,81 @@ export default {
       const nav = document.querySelector('.navi')
       nav.classList.toggle('active');
     })
+
+
+
+   const sectionsContainer = document.querySelector('#app');
+    const sections = document.querySelectorAll('.section');
+    const nav = document.querySelector('.navbar');
+    const menu = nav.querySelector('.navi');
+    const links = nav.querySelectorAll('.tab');
+    const sectionOffset = nav.offsetHeight + 24;
+    const activeClass = 'on';
+    let activeIndex = 0;
+    let isScrolling = true;
+    let userScroll = true;
+
+    const setActiveClass = () => {
+      links[activeIndex].classList.add(activeClass);
+    };
+
+    const removeActiveClass = () => {
+      links[activeIndex].classList.remove(activeClass);
+    };
+
+  
+
+    const setMenuLeftPosition = position => {
+      menu.scrollTo({
+        left: position,
+        behavior: 'smooth',
+      });
+    };
+
+    const checkMenuOverflow = () => {
+      const activeLink = links[activeIndex].getBoundingClientRect();
+      const offset = 30;
+      
+      if (Math.floor(activeLink.right) > window.innerWidth) {
+        setMenuLeftPosition(menu.scrollLeft + activeLink.right - window.innerWidth + offset);
+      } else if (activeLink.left < 0) {
+        setMenuLeftPosition(menu.scrollLeft + activeLink.left - offset)
+      }
+    }
+
+    const handleActiveLinkUpdate = current => {
+      removeActiveClass();
+      activeIndex = current;
+      checkMenuOverflow();
+      setActiveClass();
+    };
+
+    const init = () => {
+      document.documentElement.style.setProperty('--section-offset', sectionOffset);
+    }
+
+    links.forEach((link, index) => link.addEventListener('click', () => {
+      userScroll = false;
+      handleActiveLinkUpdate(index);
+    }))
+
+    window.addEventListener("scroll", () => {
+      const currentIndex = sectionsContainer.getBoundingClientRect().top < 0
+        ? (sections.length - 1) - [...sections].reverse().findIndex(section => window.scrollY >= section.offsetTop - sectionOffset * 2)
+        : 0;
+      
+      if (userScroll && activeIndex !== currentIndex) {
+        handleActiveLinkUpdate(currentIndex);
+      } else {
+        window.clearTimeout(isScrolling);
+        isScrolling = setTimeout(() => userScroll = true, 100); 
+      }
+    });
+
+    init();
+
   },
-  beforeUnmount () {
-    window.removeEventListener('scroll', this.onScroll)
-  },
+ 
   methods: {
     gotocontact() {
       const contact = document.getElementById('contact')

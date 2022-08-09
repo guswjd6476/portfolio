@@ -1,5 +1,5 @@
 <template>
-  <div class="section" id="project">
+  <div class="section projects" id="project">
     <div class="subpgwrap">
         <div class="w1720 subtitle">
             <div class="anibox">
