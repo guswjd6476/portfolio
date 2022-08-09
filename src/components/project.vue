@@ -95,8 +95,8 @@
                           <p>{{cdwrap.time}}</p>
                         </div>
                         <div class="modal_button">
-                          <a href=""> <img src="../../public/image/icon/playg.png"><span> 웹 보기</span></a>
-                          <a class="more" href=""><span>Detail</span></a>
+                          <a :href="cdwrap.link" target="_blank"> <img src="../../public/image/icon/playg.png"><span> 웹 보기</span></a>
+                          <a class="more" :href="cdwrap.link2" target="_blank"><span>Detail</span></a>
                         </div>
                       </div>
                     </div>
@@ -156,7 +156,10 @@ export default {
        subtool3:"JAVASCRIPT/JQUERY : 동적 코드작성 및 오픈소스 활용",
        subtool4:"MYSQL : DB활용하여 게시판 작성, 글쓰기, 수정",
        time : "2022.06 - 2022.06.28 ", 
-       play : "서문시장야시장"},
+       play : "서문시장야시장",
+       link : "https://seomoon.herokuapp.com/",
+       link2 : "https://thin-garlic-63f.notion.site/PROJECT-9f899a4e3a1843ee91f2c59c294b603e"
+       },
 
       {project: "project 2",img: "./image/cd/alaska.png",name:"AlaskaTour",color : "#6FBFC5", fontcolor : "#000",
        tname: "알래스카 한인투어 리뉴얼",
@@ -168,33 +171,39 @@ export default {
        subtool3:"JAVASCRIPT/JQUERY : 동적 코드작성 및 오픈소스 활용",
        subtool4:"MYSQL : DB활용하여 게시판 작성, 글쓰기, 수정",
        time : "2022.07 - 2022.06.28 ", 
-       play : "알래스카 한인투어"
+       play : "알래스카 한인투어",
+       link : "https://alaskatravel.herokuapp.com/",
+       link2 : "https://thin-garlic-63f.notion.site/80c2e24cf26f4b5ba4bbd7decc62ccfa"
       },
 
       {project: "project 3",img: "./image/cd/deldabang.png",name:"Deuldabang",color : "#C7EA3C",fontcolor : "#000",
        tname: "사회적기업 들다방 리뉴얼",
        name_sub : "Deuldabng Renew" ,
        imgs: "./image/modal/deuldabang.jpg",
-       subcon:"기존의  서문시장야시장 웹사이트는 PC버전만 구현이 되어 있었습니다. 따라서 반응형 웹 구조를 만들기 위해 리뉴얼 하였고 리뉴얼 과정에서 UI,UX를 고려하여 여러 갈래로  나누어져 있던 메뉴 탭을 간소화 하는 작업을 진행 하였습니다.", 
+       subcon:"기존 들다방사이트에 쇼핑몰 카테고리는 기존 페이지와 따로 분리가 되어 있었고 세부 카테고리가 중복이 되는 것이 많아 DEPTH 구조와 메인을 리뉴얼 하였습니다.", 
        subtool1:"포토샵 : 메인페이지 이미지 및 로고디자인, 화면분할",
        subtool2:"HTML/CSS : 마크업 및 시안디자인 구현",
        subtool3:"JAVASCRIPT/JQUERY : 동적 코드작성 및 오픈소스 활용",
        subtool4:"MYSQL : DB활용하여 게시판 작성, 글쓰기, 수정",
-       time : "2022.06 - 2022.06.28 ", 
-       play : "사회적기업 들다방"
+       time : "2022.07 - 2022.07.28 ", 
+       play : "사회적기업 들다방",
+       link : "https://deul.herokuapp.com/",
+       link2 : "https://thin-garlic-63f.notion.site/eddd9d8d365e48c38ba9e76c22221831"
       },
       
-      {project: "project 4",img: "./image/cd/breakfast.png",name:"Breakfast",color : "#000",fontcolor : "#fff",
-       tname: "서문시장 야시장 리뉴얼",
-       name_sub : "Seomoon Market Renew" ,
-       imgs: "./image/modal/seomoon.jpg",
-       subcon:"기존의  서문시장야시장 웹사이트는 PC버전만 구현이 되어 있었습니다. 따라서 반응형 웹 구조를 만들기 위해 리뉴얼 하였고 리뉴얼 과정에서 UI,UX를 고려하여 여러 갈래로  나누어져 있던 메뉴 탭을 간소화 하는 작업을 진행 하였습니다.", 
+      {project: "project 4",img: "./image/cd/growseed.png",name:"Growseed",color : "#cfc3b5",fontcolor : "#fff",
+       tname: "GROWSEED",
+       name_sub : "GROWSEED WEB MAKING" ,
+       imgs: "./image/modal/growseed.jpg",
+       subcon:"씨앗을 나눔 하며 묘목을 구매 할 수 있는 웹사이트, 어플을 제작하였습니다. VUE.js 를 활용하여 웹의 요소를 분할 하여 제작을 하였습니다.", 
        subtool1:"포토샵 : 메인페이지 이미지 및 로고디자인, 화면분할",
        subtool2:"HTML/CSS : 마크업 및 시안디자인 구현",
-       subtool3:"JAVASCRIPT/JQUERY : 동적 코드작성 및 오픈소스 활용",
+       subtool3:"JAVASCRIPT : 동적 코드작성 및 오픈소스 활용",
        subtool4:"MYSQL : DB활용하여 게시판 작성, 글쓰기, 수정",
-       time : "2022.06 - 2022.06.28 ", 
-       play : "서문시장야시장" 
+       time : "2022.07.28 - 2022.08.04 ", 
+       play : "GROW SEED",
+       link : "https://portfolio-938d1.web.app/",
+       link2 : "https://thin-garlic-63f.notion.site/GROWSEED-df9235a66aa645fb9aa72d3063be872e"
        }
     ],
     };

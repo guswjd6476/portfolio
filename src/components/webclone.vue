@@ -86,7 +86,6 @@
                         </div>
                         <div class="modal_button">
                           <a :href="cdwrap.link" target="_blank"> <img src="../../public/image/icon/playg.png"><span> 웹 자세히 보기</span></a>
-                          <a class="more" href=""><span>Detail</span></a>
                         </div>
                       </div>
                     </div>
@@ -144,7 +143,7 @@ export default {
        subtool3:"JAVASCRIPT/JQUERY : 동적 코드작성 및 오픈소스 활용",
        time : "2022.04.14 - 2022.04.24 ", 
        play : "싱그러운집" ,
-       link : "webclone/single_house/practice.html"
+       link : "http://guswjd6476.dothome.co.kr/single_house/practice.html"
       },
       {project: "Webclone 2",img: "./image/cd/pollexcd.png",name:"Pollexzone",color : "#D0E6C8", fontcolor : "#000",
          tname: "폴렉스존 웹 클론",
@@ -156,7 +155,7 @@ export default {
        subtool3:"JAVASCRIPT/JQUERY : 동적 코드작성 및 오픈소스 활용",
        time : "2022.05.24 - 2022.06.02 ", 
        play : "폴렉스존" ,
-       link : "webclone/pollexzone/pollexzone.html"
+       link : "http://guswjd6476.dothome.co.kr/pollexzone/pollexzone.html"
        },
       {project: "Webclone 3",img: "./image/cd/dcaf.png",name:"DCAF",color : "#FFC000",fontcolor : "#000",
        tname: "대전문화재단 웹 클론",
@@ -168,7 +167,7 @@ export default {
        subtool3:"JAVASCRIPT/JQUERY : 동적 코드작성 및 오픈소스 활용",
        time : "2022.06.02 - 2022.06.07 ", 
        play : "대전문화재단"  ,
-       link : "webclone/daejeon/daejeon.html"
+       link : "http://guswjd6476.dothome.co.kr/daejeon/daejeon.html"
        },
       {project: "Webclone 4",img: "./image/cd/eyeomo.png",name:"Eyeomo",color : "#FFA4C0",fontcolor : "#fff",
        tname: "어여모 웹 클론",
@@ -180,7 +179,7 @@ export default {
        subtool3:"JAVASCRIPT/JQUERY : 동적 코드작성 및 오픈소스 활용",
        time : "2022.06.08 - 2022.06.12 ", 
        play : "어여모"  ,
-       link : "webclone/eyeomo/sub/eoyeomo_main.html"
+       link : "http://guswjd6476.dothome.co.kr/eyeomo/sub/eoyeomo_main.html"
       }
     ]
     };
