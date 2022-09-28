@@ -27,7 +27,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="" class="icon">
+                    <a href="https://github.com/guswjd6476" class="icon">
                       <div class="img_box">
                         <img src="../../public/image/icon/git.png" alt="깃허브">
                       </div>
