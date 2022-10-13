@@ -14,28 +14,28 @@
                   </div>
                   <div class="anibox icon_box">
                       <div class="img_box">
-                        <img src="../../public/image/icon/html.png" alt="">
+                        <img :src="cdwrap.s1" alt="">
                       </div>
                       <div class="img_box">
-                        <img src="../../public/image/icon/css.png" alt="">
+                        <img :src="cdwrap.s2" alt="">
                       </div>
                       <div class="img_box">
-                        <img src="../../public/image/icon/js.png" alt="">
+                        <img :src="cdwrap.s3" alt="">
                       </div>
                       <div class="img_box">
-                        <img src="../../public/image/icon/jq.png" alt="">
+                        <img :src="cdwrap.s4" alt="">
                       </div>
                       <div class="img_box">
-                        <img src="../../public/image/icon/nodejs.png" alt="">
+                        <img :src="cdwrap.s5" alt="">
                       </div>
                       <div class="img_box">
-                        <img src="../../public/image/icon/mysql.png" alt="">
+                        <img :src="cdwrap.s6" alt="">
                       </div>
                       <div class="img_box">
-                        <img src="../../public/image/icon/photoshop.png" alt="">
+                        <img :src="cdwrap.s7" alt="">
                       </div>
                       <div class="img_box">
-                        <img src="../../public/image/icon/ai.png" alt="">
+                        <img :src="cdwrap.s8" alt="">
                       </div>
                     </div>
                   <div class="cdzip_text" :style="{ 'color':cdwrap.fontcolor}">
@@ -144,10 +144,25 @@
 export default {
   name: 'intro-page',
    data() {
+    const skills = {
+      html : "image/icon/html.png",
+      css : "image/icon/css.png",
+      js : "image/icon/js.png",
+      jq : "image/icon/jq.png",
+      node : "image/icon/nodejs.png",
+      mysql : "image/icon/mysql.png",
+      ps : "image/icon/photoshop.png",
+      ai : "image/icon/ai.png",
+      vue : "image/icon/vue.png",
+      heroku : "image/icon/heroku.png",
+      firebase : "image/icon/firebase.png",
+      react : "image/icon/react.png",
+    }
     return {
        cdwraps: [
       {project: "project 1",img: "./image/cd/seomoon.png",name:"Seomoon", color : "#4B177A", fontcolor : "#fff",
        tname: "서문시장 야시장 리뉴얼",
+       s1 : skills.html, s2: skills.css, s3: skills.js, s4: skills.jq, s5 : skills.node, s6 : skills.mysql, s7 : skills.heroku, s8 : skills.ps,
        name_sub : "Seomoon Market Renew" ,
        imgs: "./image/modal/seomoon.jpg",
        subcon:"기존의  서문시장야시장 웹사이트는 PC버전만 구현이 되어 있었습니다. 따라서 반응형 웹 구조를 만들기 위해 리뉴얼 하였고 리뉴얼 과정에서 UI,UX를 고려하여 여러 갈래로  나누어져 있던 메뉴 탭을 간소화 하는 작업을 진행 하였습니다.", 
@@ -163,6 +178,7 @@ export default {
 
       {project: "project 2",img: "./image/cd/alaska.png",name:"AlaskaTour",color : "#6FBFC5", fontcolor : "#000",
        tname: "알래스카 한인투어 리뉴얼",
+       s1 : skills.html, s2: skills.css, s3: skills.js, s4: skills.jq, s5 : skills.node, s6 : skills.mysql, s7 : skills.heroku, s8 : skills.ps,
        name_sub : "Alaska Tour Renew" ,
        imgs: "./image/modal/alaska.jpg",
        subcon:"기존의  알래스카한인투어 웹사이트는 PC버전만 구현이 되어 있었습니다. 따라서 반응형 웹 구조를 만들기 위해 리뉴얼 하였고 리뉴얼 과정에서 UI,UX를 고려하여 여러 갈래로  나누어져 있던 메뉴 탭을 간소화 하는 작업을 진행 하였습니다.", 
@@ -179,6 +195,7 @@ export default {
       {project: "project 3",img: "./image/cd/deldabang.png",name:"Deuldabang",color : "#C7EA3C",fontcolor : "#000",
        tname: "사회적기업 들다방 리뉴얼",
        name_sub : "Deuldabng Renew" ,
+       s1 : skills.html, s2: skills.css, s3: skills.js, s4: skills.jq, s5 : skills.node, s6 : skills.mysql, s7 : skills.heroku, s8 : skills.ps,
        imgs: "./image/modal/deuldabang.jpg",
        subcon:"기존 들다방사이트에 쇼핑몰 카테고리는 기존 페이지와 따로 분리가 되어 있었고 세부 카테고리가 중복이 되는 것이 많아 DEPTH 구조와 메인을 리뉴얼 하였습니다.", 
        subtool1:"포토샵 : 메인페이지 이미지 및 로고디자인, 화면분할",
@@ -194,6 +211,7 @@ export default {
       {project: "project 4",img: "./image/cd/growseed.png",name:"Growseed",color : "#cfc3b5",fontcolor : "#fff",
        tname: "GROWSEED",
        name_sub : "GROWSEED WEB MAKING" ,
+       s1 : skills.html, s2: skills.css, s3: skills.js, s4 : skills.node,  s5 : skills.ps, s6: skills.ai, s7: skills.firebase, s8: skills.vue,
        imgs: "./image/modal/growseed.jpg",
        subcon:"씨앗을 나눔 하며 묘목을 구매 할 수 있는 웹사이트, 어플을 제작하였습니다. VUE.js 를 활용하여 웹의 요소를 분할 하여 제작을 하였습니다.", 
        subtool1:"포토샵 : 메인페이지 이미지 및 로고디자인, 화면분할",
@@ -204,8 +222,38 @@ export default {
        play : "GROW SEED",
        link : "https://portfolio-938d1.web.app/",
        link2 : "https://thin-garlic-63f.notion.site/GROWSEED-df9235a66aa645fb9aa72d3063be872e"
+       },
+       {project: "project 5",img: "./image/cd/hweeter.png",name:"Hweeter",color : "#53abee",fontcolor : "#fff",
+       tname: "Hweeter",
+       name_sub : "Hweeter WEB MAKING" ,
+       s1 : skills.html, s2: skills.css, s3: skills.js, s4 : skills.node,  s5 : skills.ps, s6: skills.ai, s7: skills.firebase, s8: skills.react,
+       imgs: "./image/modal/growseed.jpg",
+       subcon:"리액트 프레임워크를 사용하여 realtime 으로 채팅이 가능한 트위터 클론을 제작하였습니다.", 
+       subtool1:"FIREBASE : Firebase storage, Auth를 활용하여 DB사용",
+       subtool2:"HTML/CSS : 마크업 및 시안디자인 구현",
+       subtool3:"JAVASCRIPT : 동적 코드작성 및 오픈소스 활용",
+       subtool4:"REACT : 리액트 프레임워크를 사용하여 realtime 적용이 가능",
+       time : "2022.10.01 - 2022.10.10 ", 
+       play : "Hweeter",
+       link : "https://guswjd6476.github.io/hwitter",
+       link2 : "https://thin-garlic-63f.notion.site/GROWSEED-df9235a66aa645fb9aa72d3063be872e"
+       },
+       {project: "project 6",img: "./image/cd/growseed.png",name:"준비중",color : "#fff",fontcolor : "#000",
+       tname: "GROWSEED",
+       name_sub : "GROWSEED WEB MAKING" ,
+       imgs: "",
+       subcon:"씨앗을 나눔 하며 묘목을 구매 할 수 있는 웹사이트, 어플을 제작하였습니다. VUE.js 를 활용하여 웹의 요소를 분할 하여 제작을 하였습니다.", 
+       subtool1:"포토샵 : 메인페이지 이미지 및 로고디자인, 화면분할",
+       subtool2:"HTML/CSS : 마크업 및 시안디자인 구현",
+       subtool3:"JAVASCRIPT : 동적 코드작성 및 오픈소스 활용",
+       subtool4:"MYSQL : DB활용하여 게시판 작성, 글쓰기, 수정",
+       time : "2022.10.01 - 2022.10.10 ", 
+       play : " SEED",
+       link : "https://portfolio-938d1.web.app/",
+       link2 : "https://thin-garlic-63f.notion.site/GROWSEED-df9235a66aa645fb9aa72d3063be872e"
        }
     ],
+    
     };
   },
 
