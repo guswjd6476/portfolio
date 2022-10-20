@@ -238,9 +238,9 @@ export default {
        link : "https://guswjd6476.github.io/hwitter",
        link2 : "https://thin-garlic-63f.notion.site/GROWSEED-df9235a66aa645fb9aa72d3063be872e"
        },
-       {project: "project 6",img: "./image/cd/Drawing.png",name:"DrawingTodo",color : "#fff",fontcolor : "#000",
-       tname: "DrawingTodo",
-       name_sub : "DrawingTodo WEB MAKING" ,
+       {project: "project 6",img: "./image/cd/Drawing.png",name:"Draw(준비중)",color : "#fff",fontcolor : "#000",
+       tname: "DrawTodo",
+       name_sub : "DrawTodo WEB MAKING" ,
        s1 : skills.html, s2: skills.css, s3: skills.js, s4 : skills.node,  s5 : skills.ps, s6: skills.ai, s7: skills.firebase, s8: skills.react,
        imgs: "",
        subcon:"씨앗을 나눔 하며 묘목을 구매 할 수 있는 웹사이트, 어플을 제작하였습니다. VUE.js 를 활용하여 웹의 요소를 분할 하여 제작을 하였습니다.", 
