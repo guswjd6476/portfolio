@@ -243,7 +243,7 @@ export default {
        name_sub : "DrawTodo WEB MAKING" ,
        s1 : skills.html, s2: skills.css, s3: skills.js, s4 : skills.node,  s5 : skills.ps, s6: skills.ai, s7: skills.firebase, s8: skills.react,
        imgs: "",
-       subcon:"씨앗을 나눔 하며 묘목을 구매 할 수 있는 웹사이트, 어플을 제작하였습니다. VUE.js 를 활용하여 웹의 요소를 분할 하여 제작을 하였습니다.", 
+       subcon:"자신의 스케줄을 간단하게 작성하고, 손으로 메모도 가능한 어플을 준비하였습니다.", 
        subtool1:"Gibhub : github gh-page 활용하여 배포",
        subtool2:"HTML/CSS : 마크업 및 시안디자인 구현",
        subtool3:"JAVASCRIPT : 동적 코드작성 및 오픈소스 활용",
