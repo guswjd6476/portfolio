@@ -21,7 +21,7 @@
                   <li>
                     <a href="https://entphj.tistory.com/" class="icon">
                       <div class="img_box">
-                        <img src="../../public/image/icon/insta.png" alt="인스타그램">
+                        <img src="../../public/image/icon/blog.png" alt="인스타그램">
                       </div>
                       <strong>BLOG</strong>
                     </a>
