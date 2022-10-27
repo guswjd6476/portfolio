@@ -19,11 +19,11 @@
                 </div>
                 <ul class="icon_box">
                   <li>
-                    <a href="" class="icon">
+                    <a href="https://entphj.tistory.com/" class="icon">
                       <div class="img_box">
                         <img src="../../public/image/icon/insta.png" alt="인스타그램">
                       </div>
-                      <strong>INSTAGRAM</strong>
+                      <strong>BLOG</strong>
                     </a>
                   </li>
                   <li>
